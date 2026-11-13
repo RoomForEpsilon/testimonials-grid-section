@@ -15,6 +15,7 @@
   --Grey-500: hsl(217, 19%, 35%);
   --Dark-blue: hsl(219, 29%, 14%);
   --Black: hsl(0, 0%, 7%);
+  --body-background: #F6F5F6;
   --Barlow: Barlow, sans-serif;
   --medium: 500;
   --semi-bold: 600;
@@ -60,9 +61,119 @@
   font-weight: var(--medium);
 }
 
+body {
+  width: 100%;
+  background-color: var(--body-background);
+}
+
+main {
+  width: 100%;
+}
+
+.card-wrapper {
+  width: 81.3333333333%;
+  margin: 6rem auto 0;
+  list-style-type: none;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+}
+.card h1 {
+  padding: 1rem 0;
+}
+.card img {
+  border-radius: 50%;
+  margin-right: 1rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.card .name-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+}
+.card .image-name-wrapper {
+  display: flex;
+}
+
+.daniel {
+  background-color: var(--Purple-500);
+}
+.daniel img {
+  outline: solid var(--Purple-300);
+}
+.daniel .name,
+.daniel h1 {
+  color: var(--White);
+}
+.daniel .verified-grad,
+.daniel blockquote {
+  color: var(--Purple-50);
+}
+
+.jonathan {
+  background-color: var(--Grey-500);
+}
+.jonathan .name,
+.jonathan h1 {
+  color: var(--White);
+}
+.jonathan .verified-grad,
+.jonathan blockquote {
+  color: var(--Grey-100);
+}
+
+.jeanette {
+  background-color: var(--White);
+}
+.jeanette .name,
+.jeanette h1 {
+  color: var(--Grey-500);
+}
+.jeanette .verified-grad,
+.jeanette blockquote {
+  color: var(--Grey-400);
+}
+
+.patrick {
+  background-color: var(--Dark-blue);
+}
+.patrick img {
+  outline: solid var(--Purple-300);
+}
+.patrick .name,
+.patrick h1 {
+  color: var(--Grey-200);
+}
+.patrick .verified-grad,
+.patrick blockquote {
+  color: var(--Grey-100);
+}
+
+.kira {
+  background-color: var(--White);
+}
+.kira .name,
+.kira h1 {
+  color: var(--Grey-500);
+}
+.kira .verified-grad,
+.kira blockquote {
+  color: var(--Grey-400);
+}
+
 .attribution {
   font-size: 0.6875rem;
   text-align: center;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: white;
+  width: 81.3333333333%;
 }
 
 .attribution a {
