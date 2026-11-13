@@ -29,6 +29,9 @@
 
 }
 
+$MOBILE_MAX_WIDTH:  660px;
+$TABLET_MAX_WIDTH: 1024px;
+
 @font-face {
     font-family: Barlow;
     src: url(./Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
@@ -200,10 +203,42 @@ main {
     font-size: 0.6875rem; 
     text-align: center; 
     padding: 1rem 2rem;
-    margin: 0 auto;
+    margin: 1rem auto;
     border-radius: .5rem;
     background-color: white;
     width: calc(305/375 * 100%); 
 }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media ($MOBILE_MAX_WIDTH < width <= $TABLET_MAX_WIDTH) { 
  
+    .card-wrapper {
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        margin: 0px auto;
+    }
+
+    .daniel {
+        grid-area: 1 / 1 / span 1 / span 2;
+        background-image: url(./images/bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 right 10rem;
+    }
+
+    .jonathan {
+        grid-area: 2 / 1 / span 1 / span 1;
+    }
+
+    .patrick {
+        grid-area: 3 / 1 / span 1 / span 2;
+    }
+
+    .kira {
+        grid-area: 4 / 1 / span 1 / span 2;
+    }
+}
+
