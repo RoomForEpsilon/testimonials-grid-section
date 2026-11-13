@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
 }
-
 :root {
-
 // Primary
 --Purple-50: hsl(260, 100%, 95%);
 --Purple-300: hsl(264, 82%, 80%);
@@ -34,14 +32,14 @@ $TABLET_MAX_WIDTH: 1024px;
 
 @font-face {
     font-family: Barlow;
-    src: url(./Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
+    src: url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-SemiBold.ttf);
     font-weight: 600;
     font-display: swap;
 }
 
 @font-face {
     font-family: Barlow;
-    src: url(./Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
+    src: url(./fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf);
     font-weight: 500;
     font-display: swap;
 }
@@ -83,6 +81,10 @@ body {
 
 main {
     width: 100%;
+}
+
+.not-visible {
+    visibility: hidden;
 }
 
 @mixin mobileWraperWidth {
